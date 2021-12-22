@@ -1,0 +1,30 @@
+※ OX 퀴즈가 여러개 사용 (확인문제)
+
+var oxAns = [정답];
+
+oxCon = new oxListContents(해당 위치, 해당 정답);
+oxCon.init();
+
+------------------------------------------
+
+CSS 설정
+.contents:nth-child(1) .ox1{
+    top: 371px;
+    left: 1453px;
+}
+
+.contents:nth-child(1) .ox2{
+    top: 654px;
+    left: 1453px;
+}
+
+------------------------------------------
+
+ex)
+var oxAns = ['O', 'O', 'X'];
+
+oxCon = new oxListContents(_page, oxAns);
+oxCon.init();
+
+
+
