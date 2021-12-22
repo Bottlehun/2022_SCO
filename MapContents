@@ -1,0 +1,16 @@
+mapCon = new mapContents(해당 위치, 가로픽셀, 세로픽셀, 지도안에 버튼이 있는경우);
+mapCon.init();
+
+CSS 설정
+.contents:nth-child(1) .mapZoom{확대축소 위치}
+.contents:nth-child(1) .mapZoom .map{확대축소될 이미지}
+.contents:nth-child(1) .mapZoom .innerbtn{안쪽에 버튼}
+
+------------------------------------------
+
+ex)
+mapCon = new mapContents(_page, 1053, 789, false);
+mapCon.init();
+
+
+
