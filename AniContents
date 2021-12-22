@@ -1,0 +1,53 @@
+<div class="ani ani1" data-ado=""></div>
+<div class="ani ani2" data-ado=""></div>
+
+aniCon = new aniContents(해당 위치, 말풍선 상태);
+aniCon.init();
+
+CSS 설정
+.contents:nth-child(1) .ani1{
+    position: absolute;
+    top: 500px;
+    left: 300px;
+    width: 200px;
+    height: 400px;
+    background: url(../images/06/ani_1.png) no-repeat;
+/*    border: 1px solid red;*/
+    
+}
+
+.contents:nth-child(1) .ani1.animotion{
+    background: url(../images/06/ani_2.png) no-repeat;
+}
+
+.contents:nth-child(1) .ani1 .item{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 400px;
+    height: 300px;
+    background: url(../images/06/ani_3.png) no-repeat;
+}
+
+.contents:nth-child(1) .ani1 .close{
+    top: -15px;
+    right: -15px;
+}
+
+추가기능 1 : 모두듣기 버튼
+var aniTime = [2000, 2000]; //사운드파일 길이
+
+aniCon.allSound(사운드파일 길이, 말풍선 상태); 
+말풍선 상태 = true : 말풍선 모두 보이기 / false : 말풍선 사라지고 현재만 보이기
+
+------------------------------------------
+
+ex) 
+var aniTime = [2000, 2000];
+
+aniCon = new aniContents(_page, false);
+aniCon.init();
+aniCon.allSound(aniTime, false); // 추가기능 1
+
+
+
