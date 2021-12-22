@@ -1,0 +1,69 @@
+※ 뒤집어지는 카드 생성
+카드 안쪽 내용 위치 
+_page.find("cardFront") //앞면 내용
+_page.find("cardBack")  //뒷면 내용
+
+
+cardCon = new cardturnContents(해당위치, 카드개수, {
+    distort: 1000, = 왜곡되는 값(값이 클 수록 왜곡이 작아짐)
+    type: "cardBtn", = "cardBtn" : 카드클릭으로 뒤집음, "inBtn" : 뒤집는 버튼을 안쪽에 따로 둠, "outBtn" : 뒤집는 버튼을 바깥쪽에 따로 둠
+}); 
+cardCon.init();
+
+------------------------------------------
+
+CSS 설정
+.contents:nth-child(1) .card[data-num="1"]{
+    position: absolute;
+    top: 259px;
+    left: 101px;
+    width: 1000px;
+    height: 500px;
+}
+
+.contents:nth-child(1) .card[data-num="1"] .cardFront{
+    background: url(../images/03/item_3_1.png) no-repeat;
+}
+
+.contents:nth-child(1) .card[data-num="1"] .cardBack{
+    background: url(../images/03/item_3_3.png) no-repeat;
+}
+
+카드 안쪽에 버튼
+.contents:nth-child(1) .card[data-num="1"] .cardFront .f_btn{
+    top: 0px;
+    left: 0px;
+    width: 100px;
+    height: 100px;
+/*    border: 1px solid red;*/
+}
+
+.contents:nth-child(1) .card[data-num="1"] .cardBack .b_btn{
+    top: 0px;
+    left: 0px;
+    width: 100px;
+    height: 100px;
+/*    border: 1px solid red;*/
+}
+
+카드 바깥쪽에 버튼
+.contents:nth-child(1) .card[data-num="1"] .card_btn{
+    top: 0px;
+    left: 0px;
+    width: 100px;
+    height: 100px;
+/*    border: 1px solid red;*/
+}
+
+
+------------------------------------------
+
+ex)
+cardCon = new cardturnContents(_page, 1, {
+    distort: 5000,
+    type: "cardBtn",
+}); 
+cardCon.init();
+
+
+
