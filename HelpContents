@@ -1,0 +1,17 @@
+helpCon = new helpContents(해당 위치);
+var script = '내용';
+helpCon.init(script);
+
+------------------------------------------
+
+ex)
+helpCon = new helpContents(_page);
+var script = '일주일 동안 수행할 수 있는 과제를 정하되, 모둠원들이 힘을 모아 함께 실천할 수 있는 활동으로 정해야 해.';
+helpCon.init(script);
+
+
+
+
+
+
+
