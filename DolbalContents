@@ -1,0 +1,45 @@
+※ 깨몽퀴즈
+
+var items = {
+    text: ["금", "돌", "공기", "플라스틱"], // 보기
+    ans: ["2"] //정답
+}
+
+CSS 설정
+.dolquiz{
+    background: rgba(0,0,0,0.7) url(../images/05/dol_bg.png) no-repeat;
+}
+
+.dolquiz ul{
+    top: 630px;
+    left: 430px;
+    width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px solid red;
+}
+
+.dolquiz li{
+    width: fit-content;
+    margin-bottom: 50px;
+    border: 1px solid red;
+}
+
+.dolquiz .dol_close{
+    top: 236px;
+    left: 1492px;
+}
+
+------------------------------------------
+
+var items = {
+    text: ["금", "돌", "공기", "플라스틱"],
+    ans: ["2"]
+}
+
+ex)
+dolbalCon = new dolbalContents(_page, items);
+dolbalCon.init();
+
+
+
