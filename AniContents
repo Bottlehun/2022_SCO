@@ -1,3 +1,4 @@
+
 <div class="ani ani1" data-ado=""></div>
 <div class="ani ani2" data-ado=""></div>
 
@@ -12,8 +13,7 @@ CSS 설정
     width: 200px;
     height: 400px;
     background: url(../images/06/ani_1.png) no-repeat;
-/*    border: 1px solid red;*/
-    
+    border: 1px solid red;
 }
 
 .contents:nth-child(1) .ani1.animotion{
