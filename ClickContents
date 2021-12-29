@@ -59,6 +59,10 @@ clickCon.zIndex(해당 버튼 요소, clickItem 번호);
 
 --------------------------------------------
 
+추가기능 5 : 순차적으로 클릭유도
+
+--------------------------------------------
+
 ※ 음성 버튼에 음성 추가하기
 contentAdo : 클릭시 무조건 다시 재생
 toggleAdo  : 클릭시 재생, 재생중 클릭시 정지
@@ -97,5 +101,7 @@ clickCon.showitem(); // 추가기능 1
 clickCon.setAnsBtn(); // 추가기능 2
 clickCon.cho(choTxt, 2); // 추가기능 3
 clickCon.zIndex(_page.find('.target'), "1"); // 추가기능 4
+clickCon.step(); // 추가기능 5
+
 
 
