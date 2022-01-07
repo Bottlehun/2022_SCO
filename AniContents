@@ -2,7 +2,7 @@
 <div class="ani ani1" data-ado=""></div>
 <div class="ani ani2" data-ado=""></div>
 
-aniCon = new aniContents(해당 위치, 말풍선 상태);
+aniCon = new aniContents(해당 위치, 말풍선 상태, 토글 유무);
 aniCon.init();
 
 CSS 설정
@@ -40,14 +40,17 @@ var aniTime = [2000, 2000]; //사운드파일 길이
 aniCon.allSound(사운드파일 길이, 말풍선 상태); 
 말풍선 상태 = true : 말풍선 모두 보이기 / false : 말풍선 사라지고 현재만 보이기
 
+※ 토글 유무
+"none" : 기존과 동일, "toggle" : 누르면 말풍선과 음성이 나오고 한번 더 누르면 말풍선이 닫힘
 ------------------------------------------
 
 ex) 
 var aniTime = [2000, 2000];
 
-aniCon = new aniContents(_page, false);
+aniCon = new aniContents(_page, false, "none");
 aniCon.init();
 aniCon.allSound(aniTime, false); // 추가기능 1
+
 
 
 
