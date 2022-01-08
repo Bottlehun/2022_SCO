@@ -1,25 +1,22 @@
 ※ 보기가 O, X 2개일 경우에만 사용
 
-var ox = [정답];
+JS 설정
+oxCon = new oxContents(_page, "O");
+oxCon.init();
 
+CSS 설정
+.contents:nth-child(1) .o_item{O 이미지}
+.contents:nth-child(1) .x_item{X 이미지}
+.contents:nth-child(1) .o_item.dis{O 오답 이미지}
+.contents:nth-child(1) .x_item.dis{X 오답 이미지}
+.contents:nth-child(1) .o_item.cor{O 정답 이미지}
+.contents:nth-child(1) .x_item.cor{X 정답 이미지}
+
+------------------------------------------
+설명
 oxCon = new oxContents(해당 위치, 해당 정답);
 oxCon.init(); // 초기화
 
-CSS 설정
-.o_item{O 이미지}
-.x_item{X 이미지}
-.o_item.dis{O 오답 이미지}
-.x_item.dis{X 오답 이미지}
-.o_item.cor{O 정답 이미지}
-.x_item.cor{X 정답 이미지}
-
-------------------------------------------
-
-ex)
-var ox = ["O", "X", "O", "O", "X"];
-
-oxCon = new oxContents(_page, ox[_page.index()]);
-oxCon.init();
 
 
 
