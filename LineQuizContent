@@ -7,7 +7,7 @@ var quizItem = ["0_1", "1_2", "2_0"];
 
 lineCon = new lineQuizContents(_page, 3, 3, quizItem, {
     _page: _page,
-    overlap: true,
+    overlap: false,
 });
 lineCon.init();
 ※ _page: _page 필수 삽입
