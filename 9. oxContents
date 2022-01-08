@@ -1,10 +1,11 @@
 ※ 보기가 O, X 2개일 경우에만 사용
-
+------------------------------------------
 JS 설정
 oxCon = new oxContents(_page, "O");
 oxCon.init();
 oxCon.default();
 
+------------------------------------------
 CSS 설정
 .contents:nth-child(1) .o_item{O 이미지}
 .contents:nth-child(1) .x_item{X 이미지}
