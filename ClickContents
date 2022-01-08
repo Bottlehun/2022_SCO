@@ -1,8 +1,14 @@
-clickContents(갯수, 해당위치, 버튼모양); 버튼모양 1: 예시, 2: 물음표
-clickCon.init(); // 초기화
-clickCon.showitem(); // 요소 추가후 나타남
+JS 설정
+clickCon = new clickContents(4, _page, 2);
+clickCon.init();
+clickCon.showitem(); // 추가기능 1
+clickCon.setAnsBtn(); // 추가기능 2
+clickCon.cho(choTxt, 2); // 추가기능 3
+clickCon.zIndex(_page.find('.target'), "1"); // 추가기능 4
+clickCon.step(); // 추가기능 5
 
-추가기능 1 : 클릭시 새로운 요소가 나타나고 사라짐(토글)
+------------------------------------------
+
 CSS 설정
 .contents:nth-child(1) .clickContent .clickItem1{
     top: 300px;
@@ -22,13 +28,14 @@ CSS 설정
 }
 
 /*핑크 박스 */
-.contents:nth-child(1) .clickContent .clickItem{
-    background-color: #ffebe6;
-    border: 3px solid #ffb7a4;
-}
-
 .contents:nth-child(1) .clickContent .clickItem.qu:before{
     transform: translate(-50%, -50%) scale(0.8);
+}
+
+.contents:nth-child(1) .clickContent .clickItem{
+    height: 90px;
+    background-color: #ffebe6;
+    border: 3px solid #ffb7a4;
 }
 
 --------------------------------------------
@@ -60,6 +67,9 @@ clickCon.zIndex(해당 버튼 요소, clickItem 번호);
 --------------------------------------------
 
 추가기능 5 : 순차적으로 클릭유도
+.contents:nth-child(1) .clickContent .clickItem.off{
+    display: none;
+}
 
 --------------------------------------------
 
@@ -94,14 +104,10 @@ clickCon.items.bind('click', function(){
 
 ------------------------------------------
 
-ex) 
-clickCon = new clickContents(4, _page, 2);
-clickCon.init();
-clickCon.showitem(); // 추가기능 1
-clickCon.setAnsBtn(); // 추가기능 2
-clickCon.cho(choTxt, 2); // 추가기능 3
-clickCon.zIndex(_page.find('.target'), "1"); // 추가기능 4
-clickCon.step(); // 추가기능 5
+clickContents(갯수, 해당위치, 버튼모양); 버튼모양 1: 예시, 2: 물음표
+clickCon.init(); // 초기화
+clickCon.showitem(); // 요소 추가후 나타남
 
+추가기능 1 : 클릭시 새로운 요소가 나타나고 사라짐(토글)
 
 
