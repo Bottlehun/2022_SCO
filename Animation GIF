@@ -29,6 +29,15 @@ aniCon.init();
     background: url(../../../../common/images/motion_gif/doumi_03.gif) no-repeat;
 }
 
+.contents:nth-child(1) .ani1 .item{
+    position: absolute;
+    top: -315px;
+    left: -505px;
+    width: 681px;
+    height: 342px;
+    background: url(../images/04/ani_1.png) no-repeat;
+}
+
 doumi_02.gif : 왼쪽
 doumi_03.gif : 오른쪽
 
