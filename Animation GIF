@@ -1,0 +1,45 @@
+※ 물음표 궁구미 상반신
+
+<div class="ani_gif"></div>
+
+.contents:nth-child(2) .ani_gif{
+    position: absolute;
+    top: 248px;
+    left: 261px;
+    width: 146px;
+    height: 220px;
+    background: url(../../../../common/images/motion_gif/gunggmi_03.gif);
+    transform: scale(1.27);
+}
+
+------------------------------------------------------------------------------------------------
+※ 말풍선 도우미
+
+<div class="ani ani1" data-ado=""></div>
+
+aniCon = new aniContents(_page, false, "none");
+aniCon.init();
+
+.contents:nth-child(1) .ani1{
+    position: absolute;
+    top: 880px;
+    left: 1620px;
+    width: 135px;
+    height: 140px;
+    background: url(../../../../common/images/motion_gif/doumi_03.gif) no-repeat;
+}
+
+doumi_02.gif : 왼쪽
+doumi_03.gif : 오른쪽
+
+------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
