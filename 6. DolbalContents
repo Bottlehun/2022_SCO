@@ -1,10 +1,16 @@
 ※ 깨몽퀴즈
 
+JS 설정
 var items = {
-    text: ["금", "돌", "공기", "플라스틱"], // 보기
-    ans: ["2"] //정답
+    text: ["금", "돌", "공기", "플라스틱"],
+    ans: ["2"]
 }
 
+ex)
+dolbalCon = new dolbalContents(_page, items);
+dolbalCon.init();
+
+-----------------------------------------------
 CSS 설정
 .dolquiz{
     background: rgba(0,0,0,0.7) url(../images/05/dol_bg.png) no-repeat;
@@ -30,16 +36,9 @@ CSS 설정
     left: 1492px;
 }
 
-------------------------------------------
+-----------------------------------------------
 
-var items = {
-    text: ["금", "돌", "공기", "플라스틱"],
-    ans: ["2"]
-}
 
-ex)
-dolbalCon = new dolbalContents(_page, items);
-dolbalCon.init();
 
 
 
