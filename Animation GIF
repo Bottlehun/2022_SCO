@@ -2,14 +2,14 @@
 
 <div class="ani_gif"></div>
 
-.contents:nth-child(2) .ani_gif{
+.contents:nth-child(1) .ani_gif{
     position: absolute;
     top: 248px;
     left: 261px;
     width: 146px;
     height: 220px;
     background: url(../../../../common/images/motion_gif/gunggmi_03.gif);
-    transform: scale(1.27);
+/*    transform: scale(1.27);*/
 }
 
 ------------------------------------------------------------------------------------------------
