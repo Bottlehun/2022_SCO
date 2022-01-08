@@ -1,11 +1,14 @@
 ※ BN가 없는 팝업 기능
 
-popCon = new popupContents(해당 페이지, 버튼(팝업) 개수);
+JS 설정
+popCon = new popupContents(_page, 1);
 popCon.init();
 
 _page.find(".popup_btn").bind('click', function(){
     //팝업 버튼을 눌렀을때 명령어
 });
+
+------------------------------------------------
 
 CSS 설정
 .contents:nth-child(1) .popup_btn[data-num="0"]{
@@ -28,10 +31,10 @@ CSS 설정
 }
 
 ------------------------------------------
-
-ex)
-popCon = new popupContents(_page, 1);
+설명
+popCon = new popupContents(해당 페이지, 버튼(팝업) 개수);
 popCon.init();
+
 
 
 
