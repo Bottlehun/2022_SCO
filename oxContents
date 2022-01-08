@@ -3,6 +3,7 @@
 JS 설정
 oxCon = new oxContents(_page, "O");
 oxCon.init();
+oxCon.default();
 
 CSS 설정
 .contents:nth-child(1) .o_item{O 이미지}
@@ -16,7 +17,6 @@ CSS 설정
 설명
 oxCon = new oxContents(해당 위치, 해당 정답);
 oxCon.init(); // 초기화
-
-
+oxCon.default() : 기본형태의 큰 OX 퀴즈
 
 
