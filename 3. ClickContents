@@ -1,3 +1,4 @@
+------------------------------------------
 JS 설정
 clickCon = new clickContents(4, _page, 2);
 clickCon.init();
@@ -8,7 +9,6 @@ clickCon.zIndex(_page.find('.target'), "1"); // 추가기능 4
 clickCon.step(); // 추가기능 5
 
 ------------------------------------------
-
 CSS 설정
 .contents:nth-child(1) .clickContent .clickItem1{
     top: 300px;
