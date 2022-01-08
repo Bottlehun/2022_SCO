@@ -6,7 +6,6 @@ var items = {
     ans: ["2"]
 }
 
-ex)
 dolbalCon = new dolbalContents(_page, items);
 dolbalCon.init();
 
