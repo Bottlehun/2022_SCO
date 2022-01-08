@@ -38,11 +38,36 @@ CSS 설정
 
 
 // 이미지 사용시
-.contents:nth-child(1) .bogi li:nth-child(1){기본이미지}
+.contents:nth-child(1) .bogi li:nth-child(1){ /* 기본 영역 */
+    position: absolute;
+    top: 700px;
+    left: 300px;
+    width: 300px;
+    height: 300px;
+}
+
 .contents:nth-child(1) .bogi li.on:nth-child(1){정답이미지}
 .contents:nth-child(1) .bogi li.off:nth-child(1){오답이미지}
-.contents:nth-child(1) .bogi li.on:nth-child(1) .icon{정답 동그라미}
-.contents:nth-child(1) .bogi li.off:nth-child(1) .icon{오답 동그라미}
+
+.contents:nth-child(2) .bogi li.on .icon{ /* O 이미지 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 178px;
+    height: 178px;
+    transform: translate(-50%, -50%);
+    background: url(../images/09/o.png) no-repeat;
+}
+
+.contents:nth-child(2) .bogi li.off .icon{ /* X 이미지 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 154px;
+    height: 154px;
+    transform: translate(-50%, -50%);
+    background: url(../images/09/x.png) no-repeat;
+}
 
 ------------------------------------------
 설명
