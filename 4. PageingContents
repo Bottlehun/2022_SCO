@@ -1,12 +1,22 @@
+*************************************************************************
+ex) 본문
 <div class="pageWrap">
     <div class="page page1"></div>
     <div class="page page2"></div>
     <div class="page page3"></div>
 </div>
 
-*************************************************************************
-ex) 본문
+----------------------------------------
+JS 설정
+pageCon = new pageingContents(_page.find('.pageWrap'));
+pageCon.init();
 
+pageConEvent_1(pageCon.page.eq(0));
+pageCon.wrap.find(".prev, .next, .dot").bind('click',function(){
+    pageConEvent_1(pageCon.page.eq(pageCon.currentPage));
+});
+
+----------------------------------------
 CSS 설정
 .contents:nth-child(1) .page{
     position: absolute;
@@ -25,23 +35,11 @@ CSS 설정
     background: url(../images/05/item_1.png) no-repeat;
 }
 
-
-JS 설정
-pageCon = new pageingContents(_page.find('.pageWrap'));
-pageCon.init();
-
-pageConEvent_1(pageCon.page.eq(0));
-pageCon.wrap.find(".prev, .next, .dot").bind('click',function(){
-    pageConEvent_1(pageCon.page.eq(pageCon.currentPage));
-});
-
 *************************************************************************
 ex) 팝업
-
-팝업버튼
 <div class="btn" data-num="0"></div>
 
-<div class="pop pop0"> //팝업 갯수에 따라서 pop0, pop1, pop2...
+<div class="pop pop0">
     <div class="pageWrap">
         <div class="page page1"></div>
         <div class="page page2"></div>
@@ -50,6 +48,8 @@ ex) 팝업
     <div class="close"></div>
 </div>
 
+----------------------------------------
+JS 설정
 pageCon = new pageingContents($('.pop0 .pageWrap'));
 pageCon.init();
 pageCon.setPopUp(_page, 0); //---팝업번호
@@ -62,6 +62,7 @@ pageCon.wrap.find(".prev, .next, .dot").bind('click',function(){
     pageConEvent_1(pageCon.page.eq(pageCon.currentPage));
 });
 
+----------------------------------------
 CSS 설정
 .contents:nth-child(1) .btn[data-num="0"]{
     position: absolute;
