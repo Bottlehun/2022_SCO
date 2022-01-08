@@ -2,9 +2,15 @@
 <div class="ani ani1" data-ado=""></div>
 <div class="ani ani2" data-ado=""></div>
 
-aniCon = new aniContents(해당 위치, 말풍선 상태, 토글 유무);
-aniCon.init();
+-------------------------
+JS 설정
+var aniTime = [2000, 2000];
 
+aniCon = new aniContents(_page, false, "none");
+aniCon.init();
+aniCon.allSound(aniTime, false); // 추가기능 1
+
+-------------------------
 CSS 설정
 .contents:nth-child(1) .ani1{
     position: absolute;
@@ -34,6 +40,8 @@ CSS 설정
     right: -15px;
 }
 
+------------------------------------------
+
 추가기능 1 : 모두듣기 버튼
 var aniTime = [2000, 2000]; //사운드파일 길이
 
@@ -42,14 +50,12 @@ aniCon.allSound(사운드파일 길이, 말풍선 상태);
 
 ※ 토글 유무
 "none" : 기존과 동일, "toggle" : 누르면 말풍선과 음성이 나오고 한번 더 누르면 말풍선이 닫힘
+
 ------------------------------------------
-
-ex) 
-var aniTime = [2000, 2000];
-
-aniCon = new aniContents(_page, false, "none");
+설명
+aniCon = new aniContents(해당 위치, 말풍선 상태, 토글 유무);
 aniCon.init();
-aniCon.allSound(aniTime, false); // 추가기능 1
+
 
 
 
