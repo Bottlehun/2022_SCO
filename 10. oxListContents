@@ -1,12 +1,12 @@
 ※ OX 퀴즈가 여러개 사용 (확인문제)
+------------------------------------------
+JS 설정
+var oxAns = ['O', 'O', 'X'];
 
-var oxAns = [정답];
-
-oxCon = new oxListContents(해당 위치, 해당 정답);
+oxCon = new oxListContents(_page, oxAns);
 oxCon.init();
 
 ------------------------------------------
-
 CSS 설정
 .contents:nth-child(1) .ox1{
     top: 371px;
@@ -19,12 +19,14 @@ CSS 설정
 }
 
 ------------------------------------------
+설명
+var oxAns = [정답];
 
-ex)
-var oxAns = ['O', 'O', 'X'];
-
-oxCon = new oxListContents(_page, oxAns);
+oxCon = new oxListContents(해당 위치, 해당 정답);
 oxCon.init();
+
+
+
 
 
 
