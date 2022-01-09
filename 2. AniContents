@@ -67,6 +67,17 @@ for (let i = 0; i < TimeoutId; i++) {
   clearTimeout(i);
 }
 
+//다수의 함수 호출 상황에도 사용 가능
+let TimeoutId;
+
+for (let i = 0; i < 100; i++) {
+  TimeoutId = setTimeout(() => console.log(`timeout ${100 * i}`), 100 * i);
+}
+
+for (let i = 0; i < TimeoutId; i++) {
+  clearTimeout(i);
+}
+
 아직 사용은 안해봄... 
 
 
