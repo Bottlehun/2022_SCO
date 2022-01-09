@@ -57,6 +57,20 @@ aniCon = new aniContents(해당 위치, 말풍선 상태, 토글 유무);
 aniCon.init();
 
 
+본문내 페이지 이동시 ClearTimeOut이 정상적으로 작동하는것을 확인하였음
+팝업이나 본문 한 페이지 내에서 탭버튼이나 빽넥스트 버튼으로 화면 이동할 경우 ClearTimeOut이 정상으로 작동 안됨
+모든 TimeOut에 대하여 정지하는 명령어
+
+const TimeoutId = setTimeout(() => console.log('timeout'), 1000);
+
+for (let i = 0; i < TimeoutId; i++) {
+  clearTimeout(i);
+}
+
+아직 사용은 안해봄... 
+
+
+
 
 
 
