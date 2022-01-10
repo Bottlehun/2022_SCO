@@ -69,6 +69,40 @@ CSS 설정
     background: url(../images/09/x.png) no-repeat;
 }
 
+-------------------------------
+궁서체 퀴즈
+.contents:nth-child(1) .quizGroup .bogi li {
+    float: left;
+    font-size: 66px;
+    margin-right: -37px;
+    font-family: 'NotoSerifKR';
+}
+
+.contents:nth-child(1) .quizGroup li span {
+    background: transparent;
+}
+
+.contents:nth-child(1) .bogi{
+    top: 478px;
+    left: 134px;
+}
+
+.contents:nth-child(1) .bogi li{
+    width: fit-content;
+    padding-left: 90px;
+    margin-bottom: 40px;
+}
+
+.contents:nth-child(1) .bogi li.on .icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 99px;
+    height: 99px;
+    transform: translate(-50%, -50%);
+    background: url(../images/11/check.png) no-repeat;
+}
+
 ------------------------------------------
 설명
 var quizItem = {
