@@ -36,7 +36,7 @@ CSS 설정
     background: url(../images/10/chk.png) no-repeat;
 }
 
-
+---------------------
 // 이미지 사용시
 .contents:nth-child(1) .bogi li:nth-child(1){ /* 기본 영역 */
     position: absolute;
