@@ -8,7 +8,7 @@ var aniTime = [2000, 2000];
 
 aniCon = new aniContents(_page, false, "none");
 aniCon.init();
-aniCon.allSound(aniTime, false); // 추가기능 1
+aniCon.allSound(aniTime, false, "none"); // 추가기능 1 : "none", "ani1" : ani1 음성은 있으나 아무 기능이 없고 모두 듣기시 재생이 되는 경우
 aniCon.speeker(); // 추가기능 2 : 스피커버튼 on, off기능 ("toggle" 필수);
 
 -------------------------
