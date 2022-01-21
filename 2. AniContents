@@ -9,6 +9,7 @@ var aniTime = [2000, 2000];
 aniCon = new aniContents(_page, false, "none");
 aniCon.init();
 aniCon.allSound(aniTime, false); // 추가기능 1
+aniCon.speeker(); // 추가기능 2 : 스피커버튼 on, off기능 ("toggle" 필수);
 
 -------------------------
 CSS 설정
@@ -50,6 +51,13 @@ aniCon.allSound(사운드파일 길이, 말풍선 상태);
 
 ※ 토글 유무
 "none" : 기존과 동일, "toggle" : 누르면 말풍선과 음성이 나오고 한번 더 누르면 말풍선이 닫힘
+
+------------------------------------------
+
+추가기능 2 : 스피커 버튼
+"toggle" 기능 필수 삽입
+이미지 자동 적용 위치만 설정
+크기에 따라 scale만 설정
 
 ------------------------------------------
 설명
