@@ -10,11 +10,11 @@ aniCon = new aniContents(_page, false, "none");
 aniCon.init();
 aniCon.allSound(aniTime, false, "none"); // 추가기능 1 : "none", "ani1" : ani1 음성은 있으나 아무 기능이 없고 모두 듣기시 재생이 되는 경우
 aniCon.speeker(); // 추가기능 2 : 스피커버튼 on, off기능 ("toggle" 필수);
+aniCon.question(); // 추가기능 3 : 물음표 클릭 박스
 
 -------------------------
 CSS 설정
 .contents:nth-child(1) .ani1{
-    position: absolute;
     top: 500px;
     left: 300px;
     width: 200px;
@@ -28,7 +28,6 @@ CSS 설정
 }
 
 .contents:nth-child(1) .ani1 .item{
-    position: absolute;
     top: 0px;
     left: 0px;
     width: 400px;
@@ -58,6 +57,26 @@ aniCon.allSound(사운드파일 길이, 말풍선 상태);
 "toggle" 기능 필수 삽입
 이미지 자동 적용 위치만 설정
 크기에 따라 scale만 설정
+
+CSS 설정
+.contents:nth-child(1) .ani1{
+    top: 500px;
+    left: 300px;
+}
+
+------------------------------------------
+
+추가기능 3 : 음성이 포함된 물음표 클릭박스 
+"toggle" 기능 필수 삽입
+
+CSS 설정
+.contents:nth-child(1) .ani1{
+    top: 500px;
+    left: 300px;
+    width: 200px;
+    height: 400px;
+    border: 1px solid red;
+}
 
 ------------------------------------------
 설명
