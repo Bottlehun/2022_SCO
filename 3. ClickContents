@@ -27,7 +27,7 @@ CSS 설정
     background: url(이미지경로) no-repeat;
 }
 
-/*핑크 박스 */
+/*핑크 박스 (김팀)*/
 .contents:nth-child(1) .clickContent .clickItem.qu:before{
     transform: translate(-50%, -50%) scale(0.8);
 }
@@ -36,6 +36,16 @@ CSS 설정
     height: 90px;
     background-color: #ffebe6;
     border: 3px solid #ffb7a4;
+}
+
+/*흰색 박스 (설팀)*/
+.contents:nth-child(1) .clickContent .clickItem.qu:before{
+    transform: translate(-50%, -50%) scale(0.9);
+}
+
+.contents:nth-child(1) .clickContent .clickItem{
+    height: 90px;
+    background-color: #fff;
 }
 
 --------------------------------------------
