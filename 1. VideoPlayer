@@ -17,6 +17,7 @@ videoCon.init();
 videoCon.video.attr('poster','inc/media/mp4/'+fileName+'.png'); // 동영상 표지
 
 videoCon.tabMaker(tab, tabTime, true); //추가기능 1
+miniController(_page, vidoCon) // 추가기능 2
 
 -----------------------------
 
@@ -40,6 +41,13 @@ var mark1 = '00:00:00.000 00:00:01.000 00:00:02.000';
 videoCon.markMaker(mark1);
 
 ------------------------------------------
+
+추가기능 2
+미니 컨트롤러기능
+클릭하면 플레이어 오픈
+
+------------------------------------------
+
 
 
 
