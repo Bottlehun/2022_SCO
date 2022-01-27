@@ -17,7 +17,7 @@ videoCon.init();
 videoCon.video.attr('poster','inc/media/mp4/'+fileName+'.png'); // 동영상 표지
 
 videoCon.tabMaker(tab, tabTime, true); //추가기능 1
-miniController(_page, vidoCon) // 추가기능 2
+miniController(_page, videoCon); // 추가기능 2
 
 -----------------------------
 
