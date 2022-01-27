@@ -27,6 +27,13 @@ CSS 설정
     transform: translateX(-50%) scale(1); 
 }
 
+//미니 컨트롤러
+.contents:nth-child(1) .miniController{
+    top: 360px;
+    left: 570px;
+    border: 1px solid red;
+}
+
 -----------------------------
 
 추가기능 1
@@ -45,12 +52,6 @@ videoCon.markMaker(mark1);
 추가기능 2
 미니 컨트롤러기능
 클릭하면 플레이어 오픈
-
-.contents:nth-child(1) .miniController{
-    top: 360px;
-    left: 570px;
-    border: 1px solid red;
-}
 
 ------------------------------------------
 
