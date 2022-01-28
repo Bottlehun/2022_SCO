@@ -40,11 +40,11 @@ CSS 설정
     left: 760px;
 }
 
-.contents:nth-child(1) .miniControllerGroup .popup{
+.contents:nth-child(1) .mini_popup{
     background: rgba(0,0,0,0.7) url(../images/05/pop1_1.png);
 }
 
-.contents:nth-child(1) .miniControllerGroup .popup .close{
+.contents:nth-child(1) .mini_popup .mini_close{
     top: 340px;
     right: 115px;
 }
