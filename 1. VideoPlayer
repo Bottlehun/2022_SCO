@@ -27,11 +27,26 @@ CSS 설정
     transform: translateX(-50%) scale(1); 
 }
 
-//미니 컨트롤러
+//미니 컨트롤러 (김팀)
 .contents:nth-child(1) .miniController{
     top: 360px;
     left: 570px;
     border: 1px solid red;
+}
+
+//미니 컨트롤러 (설팀)
+.contents:nth-child(1) .miniController{
+    top: 230px;
+    left: 760px;
+}
+
+.contents:nth-child(1) .miniControllerGroup .popup{
+    background: rgba(0,0,0,0.7) url(../images/05/pop1_1.png);
+}
+
+.contents:nth-child(1) .miniControllerGroup .popup .close{
+    top: 340px;
+    right: 115px;
 }
 
 -----------------------------
