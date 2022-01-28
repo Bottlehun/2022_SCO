@@ -55,6 +55,22 @@ videoCon.markMaker(mark1);
 
 ------------------------------------------
 
+Youtube 삽입 기능
+var iframe = '<iframe width="1280" height="720" src="https://www.youtube.com/embed/y-GCHxppxMs" title="YouTube video player" frameborder="0" ';
+iframe += 'allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+_page.html(iframe);
+
+//탭이 있는경우
+$('.contents').eq(0).find('iframe').remove(); //iframe 제거
+
+CSS
+.contents:nth-child(1) iframe{
+    position: absolute;
+    top: 260px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 
 
 
