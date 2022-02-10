@@ -1,0 +1,87 @@
+pageingContents 상하로 animation
+
+HTML 설정
+<div class="pageWrapMask">
+    <div class="pageWrap">
+        <div class="page page1"></div>
+        <div class="page page2"></div>
+        <div class="page page3"></div>
+    </div>
+</div>
+
+------------------
+
+JS 설정
+pageCon = new pageingContents(_page.find('.pageWrap'));
+pageCon.init();
+pageCon.moveing();
+
+------------------
+
+CSS 설정
+/*전체보기 버튼 */
+.contents:nth-child(1) .popup_btn[data-num="0"]{
+    position: absolute;
+    top: 975px;
+    left: 1580px;
+    width: 290px;
+    height: 90px;
+    cursor: pointer;
+    background: url(../../../../common/images/naviitem/total.png);
+}
+
+.contents:nth-child(1) .popup[data-num="0"]{
+    background: rgba(0,0,0,0.7) url(../images/07/pop1_1.png);
+}
+
+.contents:nth-child(1) .popup .close{
+    top: 10px;
+    right: 400px;
+}
+
+/*상단 제목부분 마스크 씌우기 위한 프레임 */
+.contents:nth-child(1) .pageWrapMask{
+    position: absolute;
+    top: 150px; /* 가려질 부분 만큼 아래로 내려야 함 */
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+/*    border: 1px solid red;*/
+}
+
+.contents:nth-child(1) .pageWrap.moveing{
+    top: -150px; /* 내려진 만큼 다시 올려줘야함 */
+}
+
+.contents:nth-child(1) .pageWrap.moveing .page{
+    position: relative; /* relative로 변경됨 */
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+/*이동 버튼의 위치 */
+.contents:nth-child(1) .pageWrap .prev{
+    top: 160px;
+    left: 82px;
+/*    border: 1px solid red;*/
+}
+
+.contents:nth-child(1) .pageWrap .next{
+    top: 952px;
+    right: 1743px;
+/*    border: 1px solid red;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
